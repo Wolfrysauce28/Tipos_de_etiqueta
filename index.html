@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Etiquetas</title>
+</head>
+<body>
+    <!-- Este es un comentario en HTML -->
+    <h1 style="color: red; text-align: center;">Hola Mundo</h1>
+    <p>Este es un párrafo de ejemplo.</p>
+    <h2>Subtítulo</h2>
+    <h3>Sub-subtítulo</h3>
+    <h4>Título</h4> 
+    <h5>Titulo</h5> 
+    <h6>titulo</h6>
+       <section style="border: 1px solid black; padding: 10px;">
+    <h2>Sección de ejemplo</h2>
+    <p>Este es un párrafo dentro de una sección.</p>
+    <div> <style>
+        h2 {
+            color: rgba(0, 255, 94, 0.584);
+        }
+    </style>
+        <p>Este es un párrafo dentro de un div.</p>
+        <h2 style="color: rgb(186, 94, 202);">Título con color</h2>
+    </div>
+       </section>
+       <!--Creamos un contenedor para rutas-->
+       <!--Las rutas son direcciones de contenido o de paginas web
+       Existen 2 tipos de rutas las Absolutas y las Relativas
+       Rutas absolutas:Direccion completa URL
+       Rutas relativas:Direccion de un solo componente
+       -->
+       <div>
+        <h3>Ir a un recurso de youtube</h3>
+        <!--Usamos una ruta absoluta ya que esta fuera
+        del proyecto-->
+        <a href="https://www.youtube.com/watch?v=MJkdaVFHrto" target="_blank">
+            Ir al video de youtube</a>
+            <br>
+                        <!--Usamos una ruta relativa si esta fuera del proyecto-->
+
+            <h3>Contactame</h3>
+            <!--Recuerda eliminar el Slash / , sino va a mandar un error-->
+            <a href="vistas/contacto.html" target="_blank">Ir a contacto</a>
+            <br>
+
+
+
+                
+       </div>
+       
+</body>
+</html>
