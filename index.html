@@ -8,18 +8,22 @@
 </head>
 
 <body>
-    <!-- Este es un comentario en HTML -->
+    <!-- Encabezado principal -->
     <h1 style="color: red; text-align: center;">Hola Mundo</h1>
     <p>Este es un párrafo de ejemplo.</p>
+
+    <!-- Ejemplos de etiquetas de título -->
     <h2>Subtítulo</h2>
     <h3>Sub-subtítulo</h3>
     <h4>Título</h4>
-    <h5>Titulo</h5>
-    <h6>titulo</h6>
+    <h5>Título</h5>
+    <h6>Título pequeño</h6>
+
     <section style="border: 1px solid black; padding: 10px;">
         <h2>Sección de ejemplo</h2>
         <p>Este es un párrafo dentro de una sección.</p>
         <div>
+            <!-- Estilo en línea aplicado solo a los títulos h2 -->
             <style>
                 h2 {
                     color: rgba(0, 183, 255, 0.584);
@@ -29,48 +33,38 @@
             <h2 style="color: rgb(186, 94, 202);">Título con color</h2>
         </div>
     </section>
-    <!--Creamos un contenedor para rutas-->
-    <!--Las rutas son direcciones de contenido o de paginas web
-       Existen 2 tipos de rutas las Absolutas y las Relativas
-       Rutas absolutas:Direccion completa URL
-       Rutas relativas:Direccion de un solo componente
-       -->
+
+    <!-- Enlaces: ruta absoluta y relativa -->
     <div>
-        <h3>Ir a un recurso de youtube</h3>
-        <!--Usamos una ruta absoluta ya que esta fuera
-        del proyecto-->
-        <a href="https://www.youtube.com/watch?v=MJkdaVFHrto" target="_blank">
-            Ir al video de youtube</a>
-        <br>
-        <!--Usamos una ruta relativa si esta fuera del proyecto-->
-
-        <h3>Contactame</h3>
-        <!--Recuerda eliminar el Slash / , sino va a mandar un error-->
-        <a href="vistas/contacto.html" target="_blank">Ir a contacto</a>
+        <h3>Ir a un recurso de YouTube</h3>
+        <a href="https://www.youtube.com/watch?v=MJkdaVFHrto" target="_blank" rel="noopener noreferrer">
+            Ir al video de YouTube
+        </a>
         <br>
 
-
-
-
+        <h3>Contáctame</h3>
+        <a href="vistas/contacto.html" target="_blank" rel="noopener noreferrer">Ir a contacto</a>
+        <br>
     </div>
-    <!--Esta etiqueta img tiene varios parametros que vamos a visulizar,es una etiqueta
-       simple-->
+
+    <!-- Imagen con atributos src, alt y height -->
     <div>
         <h2>Imagen de ejemplo</h2>
-        <img src="img/lion-amazing-background-hd-wallpaper-photo.jpeg" alt="leon precioso" height="300px">
+        <img src="img/lion-amazing-background-hd-wallpaper-photo.jpeg" alt="León precioso" height="300">
     </div>
-    <!--Esta etiqueta me permite generar o crear tablas estaticas conformadas por filas y columnas-->
+
+    <!-- Tabla estática con filas y columnas -->
     <div>
         <h2>Tabla de ejemplo</h2>
-        <table border="1px" style="background-color: rgb(105, 206, 123);">
+        <table border="1" style="background-color: rgb(105, 206, 123);">
             <tr>
-                <th>Posicion</th>
+                <th>Posición</th>
                 <th>Equipos</th>
                 <th>Partidos jugados</th>
                 <th>Puntos</th>
             </tr>
             <tr>
-                <!--rowspan permite combinar las filas, pero desplaza a las demas-->
+                <!-- rowspan combina filas -->
                 <td rowspan="2">1</td>
                 <td>Independiente</td>
                 <td>4</td>
@@ -81,6 +75,7 @@
                 <td>Racing</td>
                 <td>4</td>
                 <td>9</td>
+            </tr>
             <tr>
                 <td>3</td>
                 <td>San Lorenzo</td>
@@ -118,7 +113,7 @@
                 <td>3</td>
             </tr>
             <tr>
-                <!--colspan permite combinar las columnas, pero desplaza a las demas-->
+                <!-- colspan combina columnas -->
                 <td colspan="2">9</td>
                 <td>Mushuc Runa</td>
                 <td>4</td>
@@ -126,49 +121,56 @@
             </tr>
             <tr>
                 <td>10</td>
-                <td>Universidad Catolica</td>
+                <td>Universidad Católica</td>
                 <td>4</td>
                 <td>1</td>
             </tr>
             <tr>
                 <td colspan="4">Puntos totales 50</td>
-
             </tr>
         </table>
     </div>
+
+    <!-- Segunda tabla con encabezados y datos corregidos -->
     <div>
         <h2>Tabla de ejemplo 2</h2>
-        <table border="1px" style="background-color: rgba(112, 105, 206, 0.716);">
+        <table border="1" style="background-color: rgba(112, 105, 206, 0.716);">
             <tr>
-                <th colspan="5">Diferencias entre el perro y el hombre</th>
+                <th colspan="3">Diferencias entre el perro y el hombre</th>
             </tr>
             <tr>
-                <td rowspan="2">DIFERENCIAS</td>
-                <td rowspan="1">PERRO</td>
-                <td rowspan="2">HOMBRE</td>
+                <td>Diferencias</td>
+                <td>Perro</td>
+                <td>Hombre</td>
             </tr>
             <tr>
-                <td>adsasdas </td>
+                <td>Comportamiento</td>
+                <td>Ladra</td>
+                <td>Habla</td>
+            </tr>
         </table>
     </div>
-    <!--La etiqueta de listas me permite crear listas ordenadas y no ordenadas--
-    <ul>Lista no ordenada</ul>
-    <ol>Lista ordenada</ol>
-    <li>Elemento de lista</li>
+
+    <!-- Comentario sobre listas ordenadas y no ordenadas -->
+    <!--
+        <ul>Lista no ordenada</ul>
+        <ol>Lista ordenada</ol>
+        <li>Elemento de lista</li>
     -->
+
     <div>
         <h2>Lista de mercado</h2>
         <ul style="list-style-type: square;">
-            <li>Frutas</li>
-            <ul>
-                <!--Lista anidada-->
-                <li>Manzanas</li>
-                <li>Peras</li>
-                <li>Uvas</li>
-                <li>Naranjas</li>
-            </ul>
+            <li>Frutas
+                <ul>
+                    <li>Manzanas</li>
+                    <li>Peras</li>
+                    <li>Uvas</li>
+                    <li>Naranjas</li>
+                </ul>
+            </li>
             <li>Verduras</li>
-            <li>Lacteos</li>
+            <li>Lácteos</li>
             <li>Carnes</li>
         </ul>
         <h2>Listas ordenadas: Lenguajes de programación</h2>
@@ -177,21 +179,65 @@
             <li>Java</li>
             <li>Python</li>
         </ol>
-
     </div>
+
     <div>
-        <!--La etiqueta form de formularios me permite agrupar distintas etiquetas
-            como Label,input,selection,radio button,button,entre otras-->
+        <!-- Formulario básico con método GET -->
         <h2>Formulario de ejemplo</h2>
-        <form action="https://www.google.com/search" method="get" target="_blank">
+        <form action="https://www.google.com/search" method="get" target="_blank" rel="noopener noreferrer">
             <label for="search">Buscar en Google:</label>
             <input type="text" id="search" name="search" placeholder="Escribe tu búsqueda aquí">
             <button type="submit">Buscar</button>
         </form>
     </div>
+
     <div>
         <label for="edad">Ingrese la edad del estudiante:</label>
         <input type="number" id="edad" name="edad" placeholder="Ingrese la edad del estudiante">
+    </div>
+
+    <div>
+        <label for="lenguaje">Seleccione su lenguaje de programación favorito:</label>
+        <select id="lenguaje" name="lenguaje">
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="c++">C++</option>
+            <option value="javascript">JavaScript</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="genero">Seleccione el género deseado:</label>
+        <select name="genero" id="genero">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+            <option value="prefiero-no-responder">Prefiero no responder</option>
+        </select>
+    </div>
+
+    <div>
+        <!-- Radio buttons con el mismo nombre para elegir solo una opción -->
+        <p>Seleccione un rango de edad:</p>
+        <input type="radio" name="edad-rango" id="edad-0-16" value="0-16">
+        <label for="edad-0-16">0-16 años</label>
+        <br>
+        <input type="radio" name="edad-rango" id="edad-17-100" value="17-100">
+        <label for="edad-17-100">17-100 años</label>
+    </div>
+
+    <div>
+        <!-- Checkbox para múltiples selecciones -->
+        <p>Seleccione los tipos de autos que le gustan:</p>
+        <input type="checkbox" id="deportivo" name="autos" value="deportivo">
+        <label for="deportivo">Deportivo</label>
+        <br>
+        <input type="checkbox" id="familiar" name="autos" value="familiar">
+        <label for="familiar">Familiar</label>
+        <br>
+        <input type="checkbox" id="camioneta" name="autos" value="camioneta">
+        <label for="camioneta">Camioneta</label>
+        <br>
     </div>
 </body>
 
